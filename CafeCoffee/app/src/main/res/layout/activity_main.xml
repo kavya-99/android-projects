@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kavya.cafecoffee.MainActivity"
+    android:background="@drawable/coffee">
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="PRICE:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@id/minusBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/priceText"
+        android:layout_alignRight="@+id/priceText"
+        android:layout_alignTop="@+id/plusBtn"
+        android:layout_marginRight="50dp"
+        android:background="@android:color/holo_red_light"
+        android:text="-"
+        android:textSize="40dp"
+        android:onClick="subtractCoffee"/>
+
+    <Button
+        android:id="@+id/plusBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="66dp"
+        android:layout_toEndOf="@+id/count"
+        android:layout_toRightOf="@+id/count"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_bright"
+        android:text="RESET"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="84dp"
+        android:layout_height="117dp"
+        android:layout_alignBaseline="@+id/plusBtn"
+        android:layout_alignBottom="@+id/plusBtn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="75sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="60dp"
+         android:layout_below="@id/count"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Coffee Ordering App"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+</RelativeLayout>

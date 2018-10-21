@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kavya.hello.MainActivity">
+
+
+    <Button
+        android:id="@+id/toastbtn"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@android:color/holo_red_light"
+        android:text="TOAST"
+        android:onClick="toastMe"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="100dp" />
+
+    <Button
+        android:id="@+id/countbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="COUNT"
+        android:onClick="countMe"
+
+        />
+
+    <Button
+        android:id="@+id/randombtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="RANDOM"
+
+        />
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@android:color/holo_green_light"
+        android:text="RESET" />
+
+</LinearLayout>
